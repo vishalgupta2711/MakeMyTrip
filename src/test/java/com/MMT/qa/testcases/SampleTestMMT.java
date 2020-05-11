@@ -75,8 +75,10 @@ public class SampleTestMMT {
 		
 		driver.findElement(By.xpath("//a[contains(text(),'Search')]")).click();
 		
-		driver.findElement(By.xpath("//button[substring(@id,string-length(@id) -string-length('3_0') +1)        = '3_0']")).click();
+		//view fares button
+		driver.findElement(By.xpath("//button[substring(@id,string-length(@id) -string-length('4_0') +1)        = '4_0']")).click();
 		
+		//book now button
 		driver.findElement(By.xpath("(//div[@class='faresRightSection']//button[contains(.,'Book Now')])[1]")).click();
 		////div[@class='faresRightSection']//button[contains(.,'Book Now')] This xpath was giving multiple elements ,around 10 elements so I have used index here which gives me the first element. so just appended [1] at last in the xpath
 		

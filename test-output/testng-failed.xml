@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.MMT.qa.testcases.BookingPageMMTTest">
+      <class name="com.MMT.qa.testcases.FlightSummaryPageMMTTest">
         <methods>
-          <include name="setUp"/>
+          <include name="validatePassengerData" invocation-numbers="0"/>
           <include name="tearDown"/>
-          <include name="validateBookingPageContinueBtnClick"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.MMT.qa.testcases.BookingPageMMTTest -->
+      </class> <!-- com.MMT.qa.testcases.FlightSummaryPageMMTTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
