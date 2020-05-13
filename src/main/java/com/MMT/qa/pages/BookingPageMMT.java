@@ -16,7 +16,7 @@ public class BookingPageMMT extends TestBaseMMT {
 	@FindBy(xpath = "//button[@id = 'review-continue']")
 	WebElement ContinueBtn;
 	
-	@FindBy(xpath = "//input[@value = 'no']")
+	@FindBy(xpath = "//*[@id=\"insurance-section\"]//span[contains(text(),'No, I do not wish to secure my trip')]")
 	WebElement iDonotWishToSecureMyTripRadioBtn;
 	
 	//initializing the Object repository
@@ -25,7 +25,7 @@ public class BookingPageMMT extends TestBaseMMT {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void clickOnContinueBtn() {
+	public void clickOnContinueBtn() throws InterruptedException {
 		
 		//First scroll down the page using JavascriptExecutor then click on continue button
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -34,8 +34,10 @@ public class BookingPageMMT extends TestBaseMMT {
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();",iDonotWishToSecureMyTripRadioBtn);
 		
+		Thread.sleep(2000);
 		JavascriptExecutor js2 = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();",ContinueBtn);
+		Thread.sleep(2000);
 		
 		
 		//iDonotWishToSecureMyTripRadioBtn.click();

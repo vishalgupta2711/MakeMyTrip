@@ -34,7 +34,7 @@ public class BookingPageMMTTest extends TestBaseMMT {
 	}
 	
 	@Test
-	public void validateBookingPageContinueBtnClick() {
+	public void validateBookingPageContinueBtnClick() throws InterruptedException {
 		bookingPage.clickOnContinueBtn();
 	}
 	

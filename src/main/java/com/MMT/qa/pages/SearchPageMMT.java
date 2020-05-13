@@ -17,7 +17,10 @@ public class SearchPageMMT extends TestBaseMMT {
 	
 	//PageFactory - OR for search page
 	
-	@FindBy(xpath = "//button[substring(@id,string-length(@id) -string-length('4_0') +1)        = '4_0']")
+	/*@FindBy(xpath = "//button[substring(@id,string-length(@id) -string-length('3_0') +1)        = '3_0']")
+	WebElement ViewFaresBtn;*/
+	
+	@FindBy(xpath = "(//*[contains(@id,\"bookbutton-RKEY\")])[1]")
 	WebElement ViewFaresBtn;
 	
 	@FindBy(xpath="(//div[@class='faresRightSection']//button[contains(.,'Book Now')])[1]")
@@ -31,7 +34,8 @@ public class SearchPageMMT extends TestBaseMMT {
 	//Actions
 
 	public void clickOnViewFareBtn() {
-		ViewFaresBtn.click();
+		//ViewFaresBtn.click();
+		new WebDriverWait(driver,20).until(ExpectedConditions.elementToBeClickable(ViewFaresBtn)).click();
 	}
 	
 	public BookingPageMMT clickOnBookNowBtn() {

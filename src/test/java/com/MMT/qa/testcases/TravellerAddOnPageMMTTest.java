@@ -10,34 +10,45 @@ import com.MMT.qa.pages.BookingPageMMT;
 import com.MMT.qa.pages.FlightSummaryPageMMT;
 import com.MMT.qa.pages.FlightsHomePageMMT;
 import com.MMT.qa.pages.SearchPageMMT;
+import com.MMT.qa.pages.TravellerAddOnPageMMT;
 import com.MMT.qa.util.TestUtilMMT;
 
-public class FlightSummaryPageMMTTest extends TestBaseMMT{
+public class TravellerAddOnPageMMTTest extends TestBaseMMT {
 	
 	FlightsHomePageMMT homePageMMT;
 	SearchPageMMT searchPage;
 	BookingPageMMT bookingPage;
 	FlightSummaryPageMMT summaryPage;
+	TravellerAddOnPageMMT travellerPage;
 	
 	String sheetName = "PassengerDetails";
 	
-	public FlightSummaryPageMMTTest() {
+	public TravellerAddOnPageMMTTest() {
 		super();
 	}
 	
 	@BeforeTest
 	public void setUp() throws InterruptedException {
 		initialization();
+		
 		bookingPage = new BookingPageMMT();
 		homePageMMT = new FlightsHomePageMMT();
 		searchPage = new SearchPageMMT();
 		summaryPage = new FlightSummaryPageMMT();
+		travellerPage = new TravellerAddOnPageMMT();
+		
+		//HomePage Controls
+		
 		homePageMMT.enterValueOfFromCity();
 		homePageMMT.enterValueOfToCity();
 		homePageMMT.selectDepartureDate();
 		homePageMMT.clickOnSearchBtn();
+		
+		//SearchPage Controls
 		searchPage.clickOnViewFareBtn();
 		searchPage.clickOnBookNowBtn();
+		
+		//BookingPage Controls
 		bookingPage.clickOnContinueBtn();
 		
 	}
@@ -52,16 +63,18 @@ public class FlightSummaryPageMMTTest extends TestBaseMMT{
 	public void validatePassengerData(String FirstAndMiddleName , String LastName ,
 			String Gender , String MobNum , String EmailID) throws InterruptedException {
 		summaryPage.addPassengerName(FirstAndMiddleName, LastName, Gender, MobNum, EmailID);
+		summaryPage.clickOnSummaryPageContinueBtn();
 		
 	}
-	@Test(priority = 2)
-	public void validateContinueBtnClick() {
-		summaryPage.clickOnSummaryPageContinueBtn();
-	}
 	
+	@Test(priority = 2)
+	public void validateNextBtnClick() {
+		travellerPage.clickOnNextBtn();
+	}
+
 	@AfterTest
 	public void tearDown() {
-		System.out.println("program reached end");
+		System.out.println("Program control in Traveller AddOn Page");
 		//driver.quit();
 	}
 
