@@ -6,7 +6,6 @@
       <class name="com.MMT.qa.testcases.TravellerAddOnPageMMTTest">
         <methods>
           <include name="validateNextBtnClick"/>
-          <include name="validatePassengerData"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
