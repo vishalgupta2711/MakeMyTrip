@@ -1,0 +1,7 @@
+com\MMT\qa\testcases\TravellerAddOnPageMMTTest.class
+com\MMT\qa\testcases\FlightSummaryPageMMTTest.class
+com\MMT\qa\testcases\FlightsHomePageMMTTest.class
+com\MMT\qa\testcases\TestRunner.class
+com\MMT\qa\testcases\SearchPageMMTTest.class
+com\MMT\qa\testcases\BookingPageMMTTest.class
+com\MMT\qa\testcases\SampleTestMMT.class

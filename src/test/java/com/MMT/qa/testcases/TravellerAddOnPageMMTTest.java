@@ -75,7 +75,7 @@ public class TravellerAddOnPageMMTTest extends TestBaseMMT {
 	@AfterTest
 	public void tearDown() {
 		System.out.println("Program control in Traveller AddOn Page");
-		//driver.quit();
+		driver.quit();
 	}
 
 }

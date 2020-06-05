@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-14T13:16:56 IST" name="Command line suite" finished-at="2020-05-14T13:18:07 IST" duration-ms="70413">
+  <suite started-at="2020-05-30T17:37:46 IST" name="Default suite" finished-at="2020-05-30T17:39:22 IST" duration-ms="96491">
     <groups>
     </groups>
-    <test started-at="2020-05-14T13:16:56 IST" name="Command line test" finished-at="2020-05-14T13:18:07 IST" duration-ms="70413">
+    <test started-at="2020-05-30T17:37:46 IST" name="Default test" finished-at="2020-05-30T17:39:22 IST" duration-ms="96491">
       <class name="com.MMT.qa.testcases.TravellerAddOnPageMMTTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.MMT.qa.testcases.TravellerAddOnPageMMTTest@4fe3c938]" started-at="2020-05-14T13:16:56 IST" name="setUp" finished-at="2020-05-14T13:17:47 IST" duration-ms="50605" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.MMT.qa.testcases.TravellerAddOnPageMMTTest@4df50bcc]" started-at="2020-05-30T17:37:46 IST" name="setUp" finished-at="2020-05-30T17:38:59 IST" duration-ms="73561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validatePassengerData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.MMT.qa.testcases.TravellerAddOnPageMMTTest@4fe3c938]" started-at="2020-05-14T13:17:54 IST" name="validatePassengerData" data-provider="validateGetPaggengerDetailsFromExcel" finished-at="2020-05-14T13:18:01 IST" duration-ms="7660" status="PASS">
+        <test-method signature="validatePassengerData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.MMT.qa.testcases.TravellerAddOnPageMMTTest@4df50bcc]" started-at="2020-05-30T17:39:06 IST" name="validatePassengerData" data-provider="validateGetPaggengerDetailsFromExcel" finished-at="2020-05-30T17:39:15 IST" duration-ms="8766" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,15 +42,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatePassengerData -->
-        <test-method signature="validateNextBtnClick()[pri:2, instance:com.MMT.qa.testcases.TravellerAddOnPageMMTTest@4fe3c938]" started-at="2020-05-14T13:18:01 IST" name="validateNextBtnClick" finished-at="2020-05-14T13:18:07 IST" duration-ms="5371" status="PASS">
+        <test-method signature="validateNextBtnClick()[pri:2, instance:com.MMT.qa.testcases.TravellerAddOnPageMMTTest@4df50bcc]" started-at="2020-05-30T17:39:15 IST" name="validateNextBtnClick" finished-at="2020-05-30T17:39:20 IST" duration-ms="5586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateNextBtnClick -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.MMT.qa.testcases.TravellerAddOnPageMMTTest@4fe3c938]" started-at="2020-05-14T13:18:07 IST" name="tearDown" finished-at="2020-05-14T13:18:07 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.MMT.qa.testcases.TravellerAddOnPageMMTTest@4df50bcc]" started-at="2020-05-30T17:39:20 IST" name="tearDown" finished-at="2020-05-30T17:39:22 IST" duration-ms="1939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.MMT.qa.testcases.TravellerAddOnPageMMTTest -->
-    </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
